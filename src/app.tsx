@@ -10,11 +10,11 @@ export function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
-        <Routes>
-          <Route element={<CreateRoom/>} index/>
-          <Route path="/room/:roomId" element={<Room/>}/>
-          <Route path="/room/:roomId/audio" element={<RecordRoomAudio/>}/>
-        </Routes>
+            <Routes>
+              <Route element={<CreateRoom />} index />
+              <Route path="/room/:roomId" element={<Room />} />
+              <Route path="/room/:roomId/audio" element={<RecordRoomAudio />} />
+            </Routes>
       </BrowserRouter>
     </QueryClientProvider>
   )
